@@ -1,29 +1,34 @@
 import React from 'react'
 import { motion } from "framer-motion";
+import img1  from "./img1.jpg"
+import img2 from "./img2.jpg"
 
 const Home = () => {
-  return (
-    <div className=''>
-      <div className='bg-[#1b1b1b] min-h-screen text-white '>
-        <div className='flex justify-evenly'>
-        <div className='mt-28'>
-            <div className=' h-20  w-[100%]  overflow-y-clip z-10'>
-                <motion.p   initial={{ opacity: 0, y:100 }}
-                animate={{opacity:100, y: 0}}
-  transition={{ duration: 0.3, delay: 1, ease: "linear" }} className='text-7xl mt-28 text-left z-0'>Empovering Potential</motion.p>
-                </div>
-                <div className=' h-32  w-[100%]  overflow-y-clip z-10'>  <motion.p   initial={{ opacity: 0, y:100 }}
-                animate={{opacity:100, y: 0}}
-  transition={{ duration: 0.3, delay: 1, ease: "linear" }} className='text-7xl mt-5  '>Unloocking The Future</motion.p>
-  </div>
-                </div>
-                <div>
-                <svg className='opactiy-95' fill=" #967969" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
-	 width="400px" height="500px" viewBox="0 0 62.332 62.332"
-	 xml:space="preserve">
-<g>
-	<g>
-		<path d="M57.15,26.915c-3.621-2.167-7.24-4.334-10.861-6.502c-0.029-0.029-0.072-0.055-0.137-0.073
+	return (
+		<div className=''>
+			
+			<div className='bg-[#1b1b1b] text-white  rounded-b-3xl overflow-clip'>
+				<div className='flex justify-evenly'>
+					<div className='mt-10'>
+						<div className=' h-24  w-[100%]  overflow-y-clip z-10'>
+							<motion.p initial={{ opacity: 0, y: 100 }}
+								animate={{ opacity: 100, y: 0 }}
+								transition={{ duration: 0.3, delay: 1, ease: "linear" }} className='text-7xl mt-28 text-left z-0'>Empovering Potential</motion.p>
+						</div>
+						<div className=' h-24 w-[100%]  overflow-y-clip z-10'>  <motion.p initial={{ opacity: 0, y: 100 }}
+							animate={{ opacity: 100, y: 0 }}
+							transition={{ duration: 0.3, delay: 1, ease: "linear" }} className='text-7xl mt-5  '>Unloocking The Future</motion.p>
+						</div>
+					</div>
+					<div>
+						<motion.svg  initial={{ opacity: 0, y: 100 }}
+								animate={{ opacity: 0.45, y: 0 }}
+								transition={{ duration: 0.3, delay: 1, ease: "linear" }}className='opacity-45' fill=" #967969" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+							width="400px" height="400px" viewBox="0 0 62.332 62.332"
+							xml:space="preserve">
+							<g>
+								<g>
+									<path d="M57.15,26.915c-3.621-2.167-7.24-4.334-10.861-6.502c-0.029-0.029-0.072-0.055-0.137-0.073
 			c-0.098-0.044-0.234-0.056-0.391-0.043c-0.376-0.004-0.752-0.008-1.128-0.012c-0.375-0.004-1.069,0.144-1.28,0.506
 			c-0.763,1.306-0.666,1.593-0.666,3.139c0,1.206,0.734,2.124-0.48,2.124c-3.407,0-6.814,0-10.222,0c-3.415,0-6.829,0-10.244,0
 			c-3.626,0-1.395-3.09-2.818-5.531c-0.122-0.209-0.348-0.239-0.576-0.237c-2.314,0.024-3.807,1.269-5.729,2.419
@@ -70,22 +75,64 @@ const Home = () => {
 			c-0.351,0.865-0.706,1.727-1.065,2.589c-1.043,0.641-2.201,1.167-2.601,1.405c-0.767,0.459-1.532,0.917-2.297,1.376
 			c1.237-2.234,2.487-4.462,3.747-6.685c0.066-0.115,0.105-0.238,0.125-0.36c0.75,0.448,1.498,0.897,2.248,1.345
 			c0.009,0.005,0.013,0.011,0.021,0.016C59.564,30.298,59.503,30.401,59.454,30.521z"/>
-	</g>
-</g>
-</svg>
-                </div>
-            
+								</g>
+							</g>
+						</motion.svg>
+					
+					</div>
+
+				</div>
+				<div className='mt-0 inline-block'>
+					<motion.div  initial={{ opacity: 0, y: 100 }}
+								animate={{ opacity: 1, y: 0 }}
+								transition={{ duration: 0.3, delay: 1, ease: "linear" }}>
+					<motion.button 
+						 whileHover={{ scale: 1.2,
+						
+					 }}
+
+            whileTap={{ scale: 0.8 }} className='ml-32 bg-[#dba828] text-black p-3 rounded-3xl '>Discover More</motion.button>
+			</motion.div>
+
+				</div>
+				<div className='flex justify-between space-x-6 gap-9 '>
+					 <div className='ml-32'>
+					 <div className='  mt-10 w-[100%]  overflow-y-clip z-10'>
+					 <motion.p initial={{ opacity: 0, y: 100 }}
+								animate={{ opacity: 100, y: 0 }}
+								transition={{ duration: 0.3, delay: 1, ease: "linear" }} className='text-xl text-slate-400'>Experience</motion.p>
+					 </div>
+					 <div className='  w-[100%]  overflow-y-clip z-10'>
+					 <motion.p initial={{ opacity: 0, y: 100 }}
+								animate={{ opacity: 100, y: 0 }}
+							
+							transition={{ duration: 0.3, delay: 1, ease: "linear" }} className='text-slate-500'>Memorable experiences sove long pressions Your community members creates o sence of exctement and ontoponon. These experiences come stores thor people shore spreading the poon even further</motion.p>
+					 </div>
+					 </div>
+
+					 <div className='flex '>
+					 	<img src={img1} alt=""  className='w-1/2'/>
+						<img src={img2} alt="" className='w-1/2' />
+					 </div>
+
+				</div>
+
+			</div>
+			<div className='bg-white min-h-screen rounded-3xl' >
+			<div className="flex-1  mt-4 p-9">
+          <h1 className="text-6xl md:text-8xl  font-bold">Synthium</h1>
+          <div className="mt-10">
+            <h2 className="text-lg font-semibold">01 / About</h2>
+            <p className="text-gray-600 mt-4">
+              Synthium + Companies was founded in 2014 and has shaped and reshaped countless organizations around the country. Synthium consists of passionate connectors, storytellers, and entrepreneurs implementing engagement strategies that drive organizations into the future.
+            </p>
+          </div>
         </div>
-        
+			</div>
+			
 
-        
-      
-      </div>
-
-
-      
-    </div>
-  )
+		</div>
+	)
 }
 
 export default Home

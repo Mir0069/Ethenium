@@ -4,9 +4,9 @@ import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
   return (
-    <nav className='bg-[#1b1b1b] initial right-0 left-0 sticky top-0'>
-      
-      <div className=" sm:flex space-x-6 p-6 justify-center text-white bg-[#1b1b1b]">
+    <nav className=' sticky initial right-0 justify-center left-0   top-0'>
+      {/* <div className='absolute w-[100%] blur-xl bg-white'>hello</div> */}
+      <div className=" absolute sm:flex space-x-6 p-6 justify-center text-white bg-transparent mx-auto w-[100%]">
           <NavLink
             to="/"
             className={({ isActive }) =>
@@ -26,7 +26,7 @@ const Navbar = () => {
             About
           </NavLink>
         </div>
-
+        
     </nav>
   )
 }
