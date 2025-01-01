@@ -4,11 +4,19 @@ import img1 from "./img1.jpg";
 import img2 from "./img2.jpg";
 import { img } from "framer-motion/client";
 import img3 from "./images.jpg";
+  
+// try
 
+// tryenddds
 const Home = () => {
   return (
-    <div className="">
-      <div className="bg-[#1b1b1b] text-white  rounded-b-3xl overflow-clip mb-4">
+    <motion.div
+    initial={{ opacity: 0,  }}
+    whileInView={{ opacity: 100,}}
+    transition={{ duration: 0.3, delay: 1, ease: "linear" }}
+     className="mt-5">
+      <div
+       className="bg-[#1b1b1b] text-white  rounded-3xl overflow-clip mb-4">
         <div className="flex justify-evenly">
           <div className="mt-10">
             <div className=" h-24  w-[100%]  overflow-y-clip z-10">
@@ -156,7 +164,13 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="bg-white  rounded-3xl overflow-clip">
+      {/* 2nd section */}
+      <motion.div
+      
+      initial={{ opacity: 0, y: -10 }}
+    whileInView={{ opacity: 100, y: 0 }}
+    transition={{ duration: 0.3, delay: 1, ease: "linear", }}
+      className="bg-white  rounded-3xl overflow-clip mt-3 mb-4">
         <div className="relative">
           <div className="justify-between relative flex flex-col md:flex-row items-start">
             <div className="flex-col mt-8 pl-10 pt-10">
@@ -210,8 +224,100 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
+    {/* 3rd section */}
+      <div className="bg-[#1b1b1b] min-h-screen rounded-3xl text-white mt-3">
+         <section>
+         <motion.section  initial={{ opacity: 0, x: -100 }}
+             whileInView={{ opacity: 100, x: 0 }}
+             transition={{ duration: 0.4, delay: 0, ease: "easeIn", delay:0.3 }}
+         className="text-[150px] pt-7 pl-6 ">
+          Services
+         </motion.section>
+         </section>
+         {/* services offered */}
+         <div className="flex-col pl-6 pr-12">
+  <motion.div
+            
+             initial={{ opacity: 0, y: 100 }}
+             whileInView={{ opacity: 100, y: 0 }}
+             transition={{ duration: 0.3, delay: 0, ease: "anticipate", }}
+             whileHover={{ 
+              backgroundColor:"#e3c170",
+              color:"black",
+              
+             }}
+            whileTap={{ 
+              backgroundColor:"#e3c170"
+             }}
+             style={{
+              
+            
+          }}
+             
+             className="p-10 border-b-4 border-[#e3c170] flex  ">
+    <div className="w-1/2 text-2xl">Web Development</div>
+    <div className="flex justify-between w-1/2">
+      <div  className="border-2 border-[#e3c170]  p-3 text-center rounded-3xl ">Custom Websites</div>
+      <div className="border-2 border-[#e3c170] p-3 text-center rounded-3xl">E-commerce Platforms</div>
+      <div className="border-2 border-[#e3c170] p-3 text-center rounded-3xl">CMS Integration</div>
     </div>
+  </motion.div>
+  <motion.div
+            
+            initial={{ opacity: 0, y: 100 }}
+            whileInView={{ opacity: 100, y: 0 }}
+            transition={{ duration: 0.3, delay: 0, ease: "linear" }}
+            whileHover={{ 
+             backgroundColor:"#e3c170",
+             color:"black",
+             
+            }}
+           whileTap={{ 
+             backgroundColor:"#e3c170"
+            }}
+            style={{
+             
+           
+         }}
+             className="p-10 border-b-4 border-[#e3c170] flex h">
+    <div className="w-1/2  text-2xl -full my-auto">Mobile App Development</div>
+    <div className="flex justify-between w-1/2 ">
+      <div className="border-2 border-[#e3c170] p-3 text-center rounded-3xl">iOS Apps</div>
+      <div className="border-2 border-[#e3c170] p-3 text-center rounded-3xl">Android Apps</div>
+      <div className="border-2 border-[#e3c170] p-3 text-center rounded-3xl">Hybrid Apps</div>
+    </div>
+  
+  </motion.div>
+   <motion.div
+            
+            initial={{ opacity: 0, y: 100 }}
+            whileInView={{ opacity: 100, y: 0 }}
+            transition={{ duration: 0.3, delay: 0, ease: "linear" }}
+            whileHover={{ 
+             backgroundColor:"#e3c170",
+             color:"black",
+             
+            }}
+           whileTap={{ 
+             backgroundColor:"#e3c170"
+            }}
+            style={{
+             
+           
+         }}
+            className="p-10 border-[#e3c170] flex h">
+    <div className="w-1/2  text-2xl -full my-auto">Digital Marketing</div>
+    <div className="flex justify-between w-1/2 ">
+      <div className="border-2 border-[#e3c170] p-3 text-center rounded-3xl">SEO Services</div>
+      <div className="border-2 border-[#e3c170] p-3 text-center rounded-3xl">Social Media Marketing</div>
+      <div className="border-2 border-[#e3c170] p-3 text-center rounded-3xl">Pay-Per-Click Ads</div>
+    </div>
+  </motion.div>
+</div>
+
+      </div>
+    </motion.div>
   );
 };
 
